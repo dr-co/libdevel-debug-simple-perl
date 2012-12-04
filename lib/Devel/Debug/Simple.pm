@@ -6,7 +6,9 @@ package Devel::Debug::Simple;
 use base qw(Exporter);
 our @EXPORT = qw(DEBUG DEBUGF DEBUGSUB DEBUGDUMP);
 
-use POSIX qw(strftime);
+use POSIX       qw(strftime);
+use Test::More;
+use Encode      qw(decode_utf8);
 
 our $VERSION = 0.1.0;
 
@@ -20,8 +22,7 @@ BEGIN {
         return;
     }
     # Disable in tests
-    if( $0 =~ m{\.t$}) {
-        require Test::More;
+    if( $0 =~ m{\.t$} ) {
         $IN_TEST = 1;
         return;
     }
@@ -87,6 +88,8 @@ sub DEBUGF($@) {
 
     my ($module, undef, $line) = caller;
     my $time = strftime("%Y-%m-%d %H:%M:%S", localtime);
+
+    $_ = decode_utf8($_) for $message, @opts;
     my $str  = sprintf "[%s][%s line:%s] $message\n",
         $time, $module, $line, @opts;
 
