@@ -2,21 +2,10 @@ Format-Specification: http://anonscm.debian.org/viewvc/dep/web/deps/dep5.mdwn?vi
 Maintainer: (information incomplete)
 Source: http://search.cpan.org/dist/Devel-Debug-Simple/
 Name: Devel-Debug-Simple
-DISCLAIMER: This copyright info was automatically extracted 
- from the perl module. It may not be accurate, so you better 
- check the module sources in order to ensure the module for its 
- inclusion in Debian or for general legal information. Please, 
- if licensing information is incorrectly generated, file a bug 
- on dh-make-perl.
- NOTE: Don't forget to remove this disclaimer once you are happy
- with this file.
 
 Files: *
-Copyright: (information incomplete)
-License: Artistic or GPL-1+
-
-Files: debian/*
 Copyright: 2012, Roman V. Nikolaev <rshadow@rambler.ru>
+	2012, Dmitry E. Oboukhov <unera@debian.org>
 License: Artistic or GPL-1+
 
 License: Artistic

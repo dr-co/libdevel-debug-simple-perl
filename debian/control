@@ -1,16 +1,14 @@
 Source: libdevel-debug-simple-perl
 Section: perl
 Priority: optional
-Maintainer: Roman V. Nikolaev <rshadow@rambler.ru>
+Maintainer: Dmitry E. Oboukhov <unera@debian.org>
+Uploaders: Roman V. Nikolaev <rshadow@rambler.ru>
 Build-Depends: debhelper (>= 8)
 Build-Depends-Indep: perl
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://search.cpan.org/dist/Devel-Debug-Simple/
 
 Package: libdevel-debug-simple-perl
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends}
 Description: Simple perl debug module use standart output.
- (no description was found)
- .
- This description was automagically extracted from the module by dh-make-perl.
