@@ -10,7 +10,7 @@ use POSIX       qw(strftime);
 use Test::More;
 use Encode      qw(decode_utf8);
 
-our $VERSION = 0.1.0;
+our $VERSION = '0.1';
 
 my $ENABLE;
 my $IN_TEST;

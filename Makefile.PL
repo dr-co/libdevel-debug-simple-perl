@@ -8,7 +8,7 @@ WriteMakefile(
     PREREQ_PM       => {
     'Data::Dumper'     => 0,
     },
-    LICENSE         => 'GPLv3',
+    LICENSE         => 'Perl',
     AUTHOR          => [
         'Dmitry E. Oboukhov <unera@debian.org>,',
         'Roman V. Nikolaev <rshadow@rambler.ru>',
